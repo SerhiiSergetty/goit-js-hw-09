@@ -7,9 +7,9 @@
   width: 100%; /* ширина форми на всю доступну ширину */
   margin: 30px auto; /* центрування форми горизонтально */
   padding: 24px; /* внутрішній відступ всередині форми */
-  border: 1px solid #748086; /* рамка форми */
+  border: 1px solid #e0e0e0; /* рамка форми */
   border-radius: 8px; /* закруглення кутів форми */
-  background-color: #fff; /* колір фону форми */
+  background-color: #ffffff; /* колір фону форми */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* тінь для форми */
 }
 
@@ -19,10 +19,10 @@
   flex-direction: column; /* розташування елементів label по вертикалі */
   gap: 8px; /* відстань між елементами label */
   align-items: flex-start; /* <--- ЦЕ притисне текст підпису ліворуч */
-  font-family: sans-serif; /* шрифт для тексту label */
+  font-family: 'Inter', sans-serif; /* шрифт для тексту label */
   font-size: 16px; /* розмір шрифту для тексту label */
   font-weight: 500; /* товщина шрифту для тексту label */
-  color: #2e2f42;
+  color: #2e2f42; /* колір тексту label */
   width: 100%; /* <--- КРИТИЧНО, щоб інпути не були куцими */
 }
 
@@ -31,7 +31,7 @@
 .feedback-form textarea {
   width: 100%; /* ширина полів введення на всю доступну ширину */
   padding: 12px; /* <--- ЦЕ зробить однаковий відступ з усіх боків (зверху, знизу, зліва) */
-  border: 1px solid #222222;
+  border: 1px solid #808080;
   border-radius: 4px;
   outline: transparent;
   font-size: 16px;
@@ -63,4 +63,11 @@
 /* Ефект наведення на кнопку */
 .feedback-form button:hover {
   background-color: #404bbf;
+}
+
+.feedback-form button {
+  background-color: #4d5ae5;
+  color: #fff;
+  border-radius: 4px;
+  max-width: 86px;
 }
