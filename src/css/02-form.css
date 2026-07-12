@@ -1,0 +1,71 @@
+/* Робимо з форми охайну картку по центру екрана */
+.feedback-form {
+  display: flex; /* використання flexbox для розташування елементів форми */
+  flex-direction: column; /* розташування елементів форми по вертикалі */
+  gap: 15px; /* відстань між елементами форми */
+  max-width: 400px; /* максимальна ширина форми */
+  width: 100%; /* ширина форми на всю доступну ширину */
+  margin: 30px auto; /* центрування форми горизонтально */
+  padding: 24px; /* внутрішній відступ всередині форми */
+  border: 1px solid #748086; /* рамка форми */
+  border-radius: 8px; /* закруглення кутів форми */
+  background-color: #c2d8c4; /* колір фону форми */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* тінь для форми */
+}
+
+/* Переносимо інпути ПІД текст підпису */
+.feedback-form label {
+  display: flex; /* використання flexbox для розташування елементів label */
+  flex-direction: column; /* розташування елементів label по вертикалі */
+  gap: 8px; /* відстань між елементами label */
+  align-items: flex-start; /* <--- ЦЕ притисне текст підпису ліворуч */
+  font-family: sans-serif; /* шрифт для тексту label */
+  font-size: 16px; /* розмір шрифту для тексту label */
+  font-weight: 500; /* товщина шрифту для тексту label */
+  color: #222222;
+  width: 100%; /* <--- КРИТИЧНО, щоб інпути не були куцими */
+}
+
+/* Стилізуємо поля введення */
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%; /* ширина полів введення на всю доступну ширину */
+  padding: 12px; /* <--- ЦЕ зробить однаковий відступ з усіх боків (зверху, знизу, зліва) */
+  border: 1px solid #222222;
+  border-radius: 4px;
+  outline: transparent;
+  font-size: 16px;
+  transition: border-color 0.25s ease;
+  background-color: #c2d8c4;
+
+  /* Переконайся, що падінги не розпирають інпут по ширині */
+  box-sizing: border-box;
+}
+
+/* Колір рамки при фокусі */
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #667267;
+}
+
+/* Нормальна кнопка, яка лежить всередині картки */
+.feedback-form button {
+  padding: 10px 16px;
+  background-color: #90a090;
+  color: #222222;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+/* Ефект наведення на кнопку */
+.feedback-form button:hover {
+  background-color: #222222;
+  color: #c2d8c4;
+}
+
+/*#C2D8C4*/
+/*#222222*/
