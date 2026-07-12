@@ -9,7 +9,7 @@
   padding: 24px; /* внутрішній відступ всередині форми */
   border: 1px solid #748086; /* рамка форми */
   border-radius: 8px; /* закруглення кутів форми */
-  background-color: #c2d8c4; /* колір фону форми */
+  background-color: #fff; /* колір фону форми */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* тінь для форми */
 }
 
@@ -22,7 +22,7 @@
   font-family: sans-serif; /* шрифт для тексту label */
   font-size: 16px; /* розмір шрифту для тексту label */
   font-weight: 500; /* товщина шрифту для тексту label */
-  color: #222222;
+  color: #2e2f42;
   width: 100%; /* <--- КРИТИЧНО, щоб інпути не були куцими */
 }
 
@@ -36,7 +36,6 @@
   outline: transparent;
   font-size: 16px;
   transition: border-color 0.25s ease;
-  background-color: #c2d8c4;
 
   /* Переконайся, що падінги не розпирають інпут по ширині */
   box-sizing: border-box;
@@ -45,27 +44,23 @@
 /* Колір рамки при фокусі */
 .feedback-form input:focus,
 .feedback-form textarea:focus {
-  border-color: #667267;
+  border-color: #4d5ae5; /* колір рамки при фокусі на інпуті або textarea */
 }
 
 /* Нормальна кнопка, яка лежить всередині картки */
 .feedback-form button {
   padding: 10px 16px;
-  background-color: #90a090;
-  color: #222222;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.25s ease;
+  background-color: #4d5ae5; /* колір фону кнопки */
+  color: #fff; /* колір тексту кнопки */
+  border: none; /* прибираємо рамку кнопки */
+  border-radius: 4px; /* закруглення кутів кнопки */
+  font-size: 16px; /* розмір шрифту кнопки */
+  font-weight: 500; /* товщина шрифту кнопки */
+  cursor: pointer; /* змінюємо курсор при наведенні на кнопку */
+  transition: background-color 0.25s ease; /* плавна зміна кольору фону кнопки при наведенні */
 }
 
 /* Ефект наведення на кнопку */
 .feedback-form button:hover {
-  background-color: #222222;
-  color: #c2d8c4;
+  background-color: #404bbf;
 }
-
-/*#C2D8C4*/
-/*#222222*/
